@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Solway', serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    width: 85%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar>img{
+    width: 150px;
+}
+.list{
+    display: inline;
+    list-style: none;
+    margin: 0px 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link:hover{ 
+    color: brown;
+}
+.tittle{
+    margin:13% 0px 0px 8%;
+}
+.tittle-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.lastname{
+    color:orange;
+}
+.download{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin:30px 0px;
+}
+.images{
+    position: absolute;
+    bottom: 0px;
+    width: 45%;
+    height: 80%;
+    right: 30px;
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 13% 8% 0px 8%;
+}
+.about-head{
+    text-align: center;
+}
+.about-head h2{
+    font-size: 30px;
+}
+.about-head span{
+    color: green;
+    font-weight: bolder;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.about-content img{
+    width: 80%;
+    border-radius: 1rem;
+    
+}
+.about-details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.information{
+    margin: 1rem 0px 0px 0px;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+.info-box span{
+    margin-left: 1rem;
+}#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.bar-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: 1rem 0px;
+}
+.bar-content{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.skill-img>img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.base-bar{
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.4rem;
+    bottom: 0%;
+}.html-bar{
+    width: 94%;
+    background-color: rgb(246, 5, 5);
+}
+.css-bar{
+    width: 86%;
+    background-color: rgb(246, 5, 5);
+}
+.js-bar{
+    width: 87%;
+    background-color: rgb(246, 5, 5);
+}
+.react-bar{
+    width: 90%;
+    background-color: rgb(246, 5, 5);
+}#contacts{
+    margin: 8% 8% 0px 8%;
+}.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.icon i{
+    font-size: 30px;
+    color:black;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,white);
+}
+.icon:hover i{
+    color:white;
+    animation: shake o.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform:rotate(15deg);
+    }
+    40%{
+        transform:rotate(-15deg);
+    }
+
+}
